@@ -1,0 +1,150 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Barlow-Regular"; src: url("../fonts/Barlow-Regular.otf"); }
+@font-face { font-family: "Barlow-Medium"; src: url("../fonts/Barlow-Medium.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html,
+body { letter-spacing: 1px; }
+html { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+ul,
+h1,
+p { margin: 0; padding: 0; }
+li { list-style-type: none; }
+a,
+a:hover,
+a:focus { text-decoration: none; transition: 0.5s linear; -webkit-transition: 0.5s linear; -moz-transition: 0.5s linear; -ms-transition: 0.5s linear; -o-transition: 0.5s linear; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Common CSS Starts -------*/
+
+.section-heading > p { color: #000; font: 2.4rem/1.42857143 "Barlow-Medium"; margin-bottom: 30px; }
+.label-block { display: block; margin-bottom: 15px; }
+.label-inline-block { display: inline-block; margin-bottom: 0; }
+
+/*------- Common CSS Ends -------*/
+
+/*------- Custom Radio Button Section Starts -------*/
+
+.bg-first-radio-button { padding: 30px 15px; }
+
+	/*------- First Custom Radio Button CSS Starts -------*/
+
+.first-type-label { position: relative; }
+input[class="first-type-input"] { display: none; }
+input[class="first-type-input"] + span {
+	background-color: #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	display: block;
+	height: 20px;
+	width: 20px;
+}
+input[class="first-type-input"] + span + span {
+	color: #000;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	left: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+input[class="first-type-input"]:checked + span {
+	background-color: #00bbc7;
+}
+
+	/*------- First Custom Radio Button CSS Ends -------*/
+
+	/*------- Second Custom Radio Button CSS Starts -------*/
+
+.second-type-label { position: relative; }
+input[class="second-type-input"] { display: none; }
+input[class="second-type-input"] + span {
+	background-color: #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	width: 20px;
+}
+input[class="second-type-input"] + span:before {
+	background-color: #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	content: "";
+	height: 10px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(0);
+	-webkit-transform: translate(-50%,-50%) scale(0);
+	-moz-transform: translate(-50%,-50%) scale(0);
+	-ms-transform: translate(-50%,-50%) scale(0);
+	-o-transform: translate(-50%,-50%) scale(0);
+	width: 10px;
+}
+input[class="second-type-input"] + span + span {
+	color: #000;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	padding-left: 30px;
+}
+input[class="second-type-input"]:checked + span {
+	background-color: #00bbc7;
+}
+input[class="second-type-input"]:checked + span:before {
+	transform: translate(-50%,-50%) scale(1);
+	-webkit-transform: translate(-50%,-50%) scale(1);
+	-moz-transform: translate(-50%,-50%) scale(1);
+	-ms-transform: translate(-50%,-50%) scale(1);
+	-o-transform: translate(-50%,-50%) scale(1);
+}
+
+	/*------- Second Custom Radio Button CSS Ends -------*/
+
+	/*------- Third Custom Radio Button CSS Starts -------*/
+
+.third-type-label { position: relative; }
+input[class="third-type-input"] { display: none; }
+input[class="third-type-input"] + span {
+	background-color: #000;
+	display: block;
+	height: 30px;
+	width: 100px;
+	padding: 15px;
+}
+input[class="third-type-input"] + span +span {
+	color: #fff;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+input[class="third-type-input"]:checked + span { background-color: #00bbc7; }
+
+	/*------- Third Custom Radio Button CSS Ends -------*/
+
+/*------- Custom Radio Button Section Ends -------*/
