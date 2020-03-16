@@ -30,7 +30,7 @@ a:focus { text-decoration: none; transition: 0.5s linear; -webkit-transition: 0.
 
 /*------- Custom Radio Button Section Starts -------*/
 
-.bg-first-radio-button { padding: 30px 15px; }
+.bg-radio-button { padding: 30px 15px; }
 
 	/*------- First Custom Radio Button CSS Starts -------*/
 
@@ -135,7 +135,7 @@ input[class="third-type-input"] + span {
 	width: 100px;
 	padding: 15px;
 }
-input[class="third-type-input"] + span +span {
+input[class="third-type-input"] + span + span {
 	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	left: 50%;
@@ -148,3 +148,207 @@ input[class="third-type-input"]:checked + span { background-color: #00bbc7; }
 	/*------- Third Custom Radio Button CSS Ends -------*/
 
 /*------- Custom Radio Button Section Ends -------*/
+
+/*------- Custom Checkbox Section Starts -------*/
+
+.bg-checkbox-button { padding: 30px 15px; }
+
+	/*------- First Checkbox Button CSS Starts -------*/
+
+.first-type-label { position: relative; }
+input[class="first-type-checkbox-input"] { display: none; }
+input[class="first-type-checkbox-input"] + span {
+	background-color: #000;
+	display: block;
+	height: 20px;
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	width: 20px;
+}
+input[class="first-type-checkbox-input"] + span + span {
+	color: #000;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	left: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+input[class="first-type-checkbox-input"]:checked + span {
+	background-color: #00bbc7;
+}
+
+	/*------- First Checkbox Button CSS Ends -------*/
+
+	/*------- Second Checkbox CSS Starts -------*/
+
+.second-type-label { position: relative; }
+input[class="second-type-checkbox-input"] { display: none; }
+input[class="second-type-checkbox-input"] + span {
+	background-color: #000;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	width: 20px;
+}
+input[class="second-type-checkbox-input"] + span:before {
+	background-color: #fff;
+	content: "";
+	height: 10px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%) scale(0);
+	-webkit-transform: translate(-50%,-50%) scale(0);
+	-moz-transform: translate(-50%,-50%) scale(0);
+	-ms-transform: translate(-50%,-50%) scale(0);
+	-o-transform: translate(-50%,-50%) scale(0);
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	width: 10px;
+}
+input[class="second-type-checkbox-input"] + span + span {
+	color: #000;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	padding-left: 30px;
+}
+input[class="second-type-checkbox-input"]:checked + span {
+	background-color: #00bbc7;
+}
+input[class="second-type-checkbox-input"]:checked + span:before {
+	transform: translate(-50%,-50%) scale(1);
+	-webkit-transform: translate(-50%,-50%) scale(1);
+	-moz-transform: translate(-50%,-50%) scale(1);
+	-ms-transform: translate(-50%,-50%) scale(1);
+	-o-transform: translate(-50%,-50%) scale(1);
+}
+
+	/*------- Second Checkbox CSS Ends -------*/
+
+	/*------- Third Checkbox CSS Starts -------*/
+
+.third-type-label { position: relative; }
+input[class="third-type-checkbox-input"] { display: none; }
+input[class="third-type-checkbox-input"] + span {
+	background-color: #000;
+	display: block;
+	height: 20px;
+	position: relative;
+	width: 20px;
+}
+input[class="third-type-checkbox-input"] + span:after {
+	border-width: 0 2px 2px 0;
+	border-color: #fff;
+	border-style: solid;
+	content: "";
+	height: 9px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%,-50%) rotate(45deg) scale(0);
+	-webkit-transform: translate(-50%,-50%) rotate(45deg) scale(0);
+	-moz-transform: translate(-50%,-50%) rotate(45deg) scale(0);
+	-ms-transform: translate(-50%,-50%) rotate(45deg) scale(0);
+	-o-transform: translate(-50%,-50%) rotate(45deg) scale(0);
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	width: 5px;
+}
+input[class="third-type-checkbox-input"] + span + span {
+	color: #000;
+	font: 1.8rem/1.42857143 "Barlow-Regular";
+	left: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
+input[class="third-type-checkbox-input"]:checked + span {
+	background-color: #00bbc7;
+}
+input[class="third-type-checkbox-input"]:checked + span:after {
+	transform: translate(-50%,-50%) rotate(45deg) scale(1);
+	-webkit-transform: translate(-50%,-50%) rotate(45deg) scale(1);
+	-moz-transform: translate(-50%,-50%) rotate(45deg) scale(1);
+	-ms-transform: translate(-50%,-50%) rotate(45deg) scale(1);
+	-o-transform: translate(-50%,-50%) rotate(45deg) scale(1);
+}
+
+	/*------- Third Checkbox CSS Ends -------*/
+
+	/*------- Fourth Checkbox CSS Starts -------*/
+
+.third-type-label { position: relative; }
+input[class="fourth-type-checkbox-input"] { display: none; }
+input[class="fourth-type-checkbox-input"] + span {
+	background-color: #000;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	display: block;
+	height: 20px;
+	position: relative;
+	width: 40px;
+}
+input[class="fourth-type-checkbox-input"] + span:before {
+	background-color: #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	content: "";
+	height: 15px;
+	left: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transition: 0.3s ease;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	-ms-transition: 0.3s ease;
+	-o-transition: 0.3s ease;
+	width: 15px;
+}
+input[class="fourth-type-checkbox-input"]:checked + span {
+	background-color: #00bbc7;
+}
+input[class="fourth-type-checkbox-input"]:checked + span:before {
+	left: 22px;
+}
+
+	/*------- Fourth Checkbox CSS Ends -------*/
+
+/*------- Custom Checkbox Section Ends -------*/

@@ -1,0 +1,31 @@
+@media only screen and (max-width: 767px) {
+
+	/*------- Custom Radio Button Section Starts -------*/
+
+.bg-radio-button,
+.bg-checkbox-button { padding: 15px; }
+.section-heading > p { font-size: 1.8rem; margin-bottom: 15px; }
+
+	/*------- Custom Radio Button Section Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*------- Custom Radio Button Section Starts -------*/
+
+.section-heading > p { font-size: 1.8rem; margin-bottom: 15px; }
+
+	/*------- Custom Radio Button Section Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	/*------- Custom Radio Button Section Starts -------*/
+
+.section-heading > p { font-size: 1.8rem; margin-bottom: 15px; }
+
+	/*------- Custom Radio Button Section Ends -------*/
+
+}
