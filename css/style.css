@@ -8,8 +8,7 @@
 /*------- Reset CSS Starts -------*/
 
 html,
-body { letter-spacing: 1px; }
-html { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+body { background-color: #000; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; letter-spacing: 1px; }
 ul,
 h1,
 p { margin: 0; padding: 0; }
@@ -22,7 +21,7 @@ a:focus { text-decoration: none; transition: 0.5s linear; -webkit-transition: 0.
 
 /*------- Common CSS Starts -------*/
 
-.section-heading > p { color: #000; font: 2.4rem/1.42857143 "Barlow-Medium"; margin-bottom: 30px; }
+.section-heading > p { color: #fff; font: 2.4rem/1.42857143 "Barlow-Medium"; margin-bottom: 30px; }
 .label-block { display: block; margin-bottom: 15px; }
 .label-inline-block { display: inline-block; margin-bottom: 0; }
 
@@ -37,7 +36,7 @@ a:focus { text-decoration: none; transition: 0.5s linear; -webkit-transition: 0.
 .first-type-label { position: relative; }
 input[class="first-type-input"] { display: none; }
 input[class="first-type-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -48,7 +47,7 @@ input[class="first-type-input"] + span {
 	width: 20px;
 }
 input[class="first-type-input"] + span + span {
-	color: #000;
+	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	left: 30px;
 	position: absolute;
@@ -70,7 +69,7 @@ input[class="first-type-input"]:checked + span {
 .second-type-label { position: relative; }
 input[class="second-type-input"] { display: none; }
 input[class="second-type-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -107,7 +106,7 @@ input[class="second-type-input"] + span:before {
 	width: 10px;
 }
 input[class="second-type-input"] + span + span {
-	color: #000;
+	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	padding-left: 30px;
 }
@@ -129,14 +128,14 @@ input[class="second-type-input"]:checked + span:before {
 .third-type-label { position: relative; }
 input[class="third-type-input"] { display: none; }
 input[class="third-type-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	display: block;
 	height: 30px;
 	width: 100px;
 	padding: 15px;
 }
 input[class="third-type-input"] + span + span {
-	color: #fff;
+	color: #000;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	left: 50%;
 	position: absolute;
@@ -158,7 +157,7 @@ input[class="third-type-input"]:checked + span { background-color: #00bbc7; }
 .first-type-label { position: relative; }
 input[class="first-type-checkbox-input"] { display: none; }
 input[class="first-type-checkbox-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	display: block;
 	height: 20px;
 	transition: 0.3s ease;
@@ -169,7 +168,7 @@ input[class="first-type-checkbox-input"] + span {
 	width: 20px;
 }
 input[class="first-type-checkbox-input"] + span + span {
-	color: #000;
+	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	left: 30px;
 	position: absolute;
@@ -191,7 +190,7 @@ input[class="first-type-checkbox-input"]:checked + span {
 .second-type-label { position: relative; }
 input[class="second-type-checkbox-input"] { display: none; }
 input[class="second-type-checkbox-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	height: 20px;
 	left: 0;
 	position: absolute;
@@ -228,7 +227,7 @@ input[class="second-type-checkbox-input"] + span:before {
 	width: 10px;
 }
 input[class="second-type-checkbox-input"] + span + span {
-	color: #000;
+	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	padding-left: 30px;
 }
@@ -250,7 +249,7 @@ input[class="second-type-checkbox-input"]:checked + span:before {
 .third-type-label { position: relative; }
 input[class="third-type-checkbox-input"] { display: none; }
 input[class="third-type-checkbox-input"] + span {
-	background-color: #000;
+	background-color: #fff;
 	display: block;
 	height: 20px;
 	position: relative;
@@ -278,7 +277,7 @@ input[class="third-type-checkbox-input"] + span:after {
 	width: 5px;
 }
 input[class="third-type-checkbox-input"] + span + span {
-	color: #000;
+	color: #fff;
 	font: 1.8rem/1.42857143 "Barlow-Regular";
 	left: 30px;
 	position: absolute;
@@ -304,21 +303,29 @@ input[class="third-type-checkbox-input"]:checked + span:after {
 
 	/*------- Fourth Checkbox CSS Starts -------*/
 
-.third-type-label { position: relative; }
-input[class="fourth-type-checkbox-input"] { display: none; }
-input[class="fourth-type-checkbox-input"] + span {
-	background-color: #000;
+		/*------- First Checkbox Switch CSS Starts -------*/ 
+
+.switch-type-label { position: relative; }
+input[class="first-type-checkbox-switch"] { display: none; }
+input[class="first-type-checkbox-switch"] + span {
+	background-color: #777;
 	border-radius: 24px;
 	-webkit-border-radius: 24px;
 	-moz-border-radius: 24px;
 	-ms-border-radius: 24px;
 	-o-border-radius: 24px;
+	cursor: pointer;
 	display: block;
 	height: 20px;
 	position: relative;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
 	width: 40px;
 }
-input[class="fourth-type-checkbox-input"] + span:before {
+input[class="first-type-checkbox-switch"] + span:before {
 	background-color: #fff;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
@@ -326,7 +333,62 @@ input[class="fourth-type-checkbox-input"] + span:before {
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
 	content: "";
-	height: 15px;
+	height: 20px;
+	left: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) scale(1.2);
+	-webkit-transform: translateY(-50%) scale(1.2);
+	-moz-transform: translateY(-50%) scale(1.2);
+	-ms-transform: translateY(-50%) scale(1.2);
+	-o-transform: translateY(-50%) scale(1.2);
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 20px;
+}
+input[class="first-type-checkbox-switch"]:checked + span {
+	background-color: #00bbc7;
+}
+input[class="first-type-checkbox-switch"]:checked + span:before {
+	left: 20px;
+}
+
+		/*------- First Checkbox Switch CSS Ends -------*/
+
+		/*------- Second Checkbox Switch CSS Starts -------*/ 
+
+.switch-type-label { margin-bottom: 30px; position: relative; }
+input[class="second-type-checkbox-switch"] { display: none; }
+input[class="second-type-checkbox-switch"] + span {
+	background-color: #777;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	position: relative;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 60px;
+}
+input[class="second-type-checkbox-switch"] + span:before {
+	background-color: #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	content: "";
+	height: 20px;
 	left: 5px;
 	position: absolute;
 	top: 50%;
@@ -335,20 +397,175 @@ input[class="fourth-type-checkbox-input"] + span:before {
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-	transition: 0.3s ease;
-	-webkit-transition: 0.3s ease;
-	-moz-transition: 0.3s ease;
-	-ms-transition: 0.3s ease;
-	-o-transition: 0.3s ease;
-	width: 15px;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 20px;
 }
-input[class="fourth-type-checkbox-input"]:checked + span {
+input[class="second-type-checkbox-switch"]:checked + span {
 	background-color: #00bbc7;
 }
-input[class="fourth-type-checkbox-input"]:checked + span:before {
-	left: 22px;
+input[class="second-type-checkbox-switch"]:checked + span:before {
+	left: 35px;
 }
 
+		/*------- Second Checkbox Switch CSS Ends -------*/
+
+		/*------- Third Checkbox Switch CSS Starts -------*/ 
+
+.switch-type-label { margin-bottom: 30px; position: relative; }
+input[class="third-type-checkbox-switch"] { display: none; }
+input[class="third-type-checkbox-switch"] + span {
+	background-color: #fff;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	cursor: pointer;
+	display: block;
+	height: 30px;
+	position: relative;
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 60px;
+}
+input[class="third-type-checkbox-switch"] + span:before {
+	background-color: #f00;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 5px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transition: 0.5s linear;
+	-webkit-transition: 0.5s linear;
+	-moz-transition: 0.5s linear;
+	-ms-transition: 0.5s linear;
+	-o-transition: 0.5s linear;
+	width: 20px;
+}
+input[class="third-type-checkbox-switch"]:checked + span {
+	background-color: #fff;
+}
+input[class="third-type-checkbox-switch"]:checked + span:before {
+	background-color: #00bbc7;
+	left: 35px;
+}
+
+		/*------- Third Checkbox Switch CSS Ends -------*/
+
 	/*------- Fourth Checkbox CSS Ends -------*/
+
+/*------- Custom Checkbox Section Ends -------*/
+
+/*------- Custom Checkbox Section Starts -------*/
+
+.bg-range-slider-button { padding: 30px 15px; }
+.range-value-display { margin-top: 15px; }
+.range-slider-value-display { color: #fff; font: 1.8rem/1.42857143 "Barlow-Regular"; }
+input[class="range-slider"] {
+	-webkit-appearance: none;
+	background-color: transparent;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	height: 40px;
+	outline: 0;
+	width: 100%;
+}
+input[class="range-slider"]::-webkit-slider-runnable-track { /*------- For Chrome and Safari -------*/
+	-webkit-appearance: none;
+	background-color: #ccc;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	height: 10px;
+	outline: 0;
+	width: 100%;
+}
+input[class="range-slider"]::-moz-range-track { /*------- For Firefox -------*/
+	-webkit-appearance: none;
+	background-color: #ccc;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	height: 10px;
+	outline: 0;
+	width: 100%;
+}
+input[class="range-slider"]:hover::-webkit-slider-runnable-track { /*------- For Chrome and Safari -------*/
+	background-color: #777;
+}
+input[class="range-slider"]:hover::-moz-range-track { /*------- For Firefox -------*/
+	background-color: #777;
+}
+input[class="range-slider"]::-webkit-slider-thumb { /*------- For Chrome and Safari -------*/
+	-webkit-appearance: none;
+	background-color: #00919a;
+	border: 4px solid #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	cursor: pointer;
+	height: 40px;
+	margin-top: -15px;
+	width: 40px;
+}
+input[class="range-slider"]::-moz-range-thumb { /*------- For Firefox -------*/
+	-webkit-appearance: none;
+	background-color: #00919a;
+	border: 4px solid #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	cursor: pointer;
+	height: 40px;
+	margin-top: -15px;
+	width: 40px;
+}
+input[class="range-slider"]:hover::-webkit-slider-thumb { /*------- For Chrome and Safari -------*/
+	background-color: #ffb300;
+}
+input[class="range-slider"]:hover::-moz-range-thumb { /*------- For Firefox -------*/
+	background-color: #ffb300;
+}
+input[class="range-slider"]::-moz-range-progress { /*------- For Firefox Progress Display -------*/
+	background-color: #00919a;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	height: 10px;
+	width: 100%;
+}
+input[class="range-slider"]:hover::-moz-range-progress { /*------- For Firefox -------*/
+	background-color: #ffb300;
+}
 
 /*------- Custom Checkbox Section Ends -------*/

@@ -204,16 +204,16 @@
 				</div>
 				<div class="row">
 					<div class="col-xs-12">
-						<label class="third-type-label label-block">
-							<input type="checkbox" name="fourth-checkbox-button" class="fourth-type-checkbox-input" />
+						<label class="switch-type-label label-block">
+							<input type="checkbox" name="first-checkbox-switch" class="first-type-checkbox-switch" />
 							<span></span>
 						</label>
-						<label class="third-type-label label-block">
-							<input type="checkbox" name="fourth-checkbox-button" class="fourth-type-checkbox-input" />
+						<label class="switch-type-label label-block">
+							<input type="checkbox" name="second-checkbox-switch" class="second-type-checkbox-switch" />
 							<span></span>
 						</label>
-						<label class="third-type-label label-block">
-							<input type="checkbox" name="fourth-checkbox-button" class="fourth-type-checkbox-input" checked="checked" />
+						<label class="switch-type-label label-block">
+							<input type="checkbox" name="third-checkbox-switch" class="third-type-checkbox-switch" />
 							<span></span>
 						</label>
 					</div>
@@ -222,5 +222,32 @@
 		</div>
 	</div>
 	<!-- Custom Checkbox Section Ends -->
+	<!-- Custom Range Slider Section Starts -->
+	<div class="container-fluid bg-range-slider-button">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-heading">
+							<p>1st - Type of Range Slider</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<input type="range" min="0" max="100" value="70" class="range-slider" id="rangeSlider" />
+						<div class="range-value-display">
+							<p class="range-slider-value-display" id="rangeSliderValueDisplay"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Custom Range Slider Section Ends -->
+	<!-- jQuery Library -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
 </body>
 </html>
