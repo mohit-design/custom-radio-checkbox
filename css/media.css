@@ -3,9 +3,10 @@
 	/*------- Custom Radio Button Section Starts -------*/
 
 .bg-radio-button,
-.bg-checkbox-button,
-.bg-range-slider-button { padding: 15px; }
+.bg-checkbox-button { padding: 15px 15px 0; }
+.bg-range-slider-button { padding: 0 15px 15px; }
 .section-heading > p { font-size: 1.8rem; margin-bottom: 15px; }
+.switch-type-label { margin-bottom: 15px; }
 
 	/*------- Custom Radio Button Section Ends -------*/
 
