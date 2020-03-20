@@ -487,6 +487,7 @@ input[class="range-slider"] {
 	-ms-border-radius: 24px;
 	-o-border-radius: 24px;
 	height: 40px;
+	padding: 0; /*------- For EDGE and IE -------*/
 	outline: 0;
 	width: 100%;
 }
@@ -514,11 +515,35 @@ input[class="range-slider"]::-moz-range-track { /*------- For Firefox -------*/
 	outline: 0;
 	width: 100%;
 }
-input[class="range-slider"]:hover::-webkit-slider-runnable-track { /*------- For Chrome and Safari -------*/
+input[class="range-slider"]::-ms-track { /*------- For EDGE and IE -------*/
+	-webkit-appearance: none;
+	background-color: #ccc;
+	border: none;
+	border-radius: 24px;
+	-webkit-border-radius: 24px;
+	-moz-border-radius: 24px;
+	-ms-border-radius: 24px;
+	-o-border-radius: 24px;
+	color: transparent;
+	height: 10px;
+	outline: 0;
+	width: 100%;
+}
+input[class="range-slider"]:hover::-webkit-slider-runnable-track,
+input[class="range-slider"]:focus::-webkit-slider-runnable-track { /*------- For Chrome and Safari -------*/
 	background-color: #777;
 }
-input[class="range-slider"]:hover::-moz-range-track { /*------- For Firefox -------*/
+input[class="range-slider"]:hover::-moz-range-track,
+input[class="range-slider"]:focus::-moz-range-track { /*------- For Firefox -------*/
 	background-color: #777;
+}
+input[class="range-slider"]:hover::-ms-track,
+input[class="range-slider"]:focus::-ms-track { /*------- For EDGE and IE -------*/
+	background-color: #777;
+}
+input[class="range-slider"]:hover::-ms-fill-lower,
+input[class="range-slider"]:focus::-ms-fill-lower { /*------- For EDGE and IE -------*/
+	background-color: #ffb300;
 }
 input[class="range-slider"]::-webkit-slider-thumb { /*------- For Chrome and Safari -------*/
 	-webkit-appearance: none;
@@ -548,11 +573,33 @@ input[class="range-slider"]::-moz-range-thumb { /*------- For Firefox -------*/
 	margin-top: -15px;
 	width: 40px;
 }
-input[class="range-slider"]:hover::-webkit-slider-thumb { /*------- For Chrome and Safari -------*/
+input[class="range-slider"]::-ms-thumb { /*------- For EDGE and IE -------*/
+	-webkit-appearance: none;
+	background-color: #00919a;
+	border: 4px solid #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+}
+input[class="range-slider"]:hover::-webkit-slider-thumb,
+input[class="range-slider"]:focus::-webkit-slider-thumb { /*------- For Chrome and Safari -------*/
 	background-color: #ffb300;
 }
-input[class="range-slider"]:hover::-moz-range-thumb { /*------- For Firefox -------*/
+input[class="range-slider"]:hover::-moz-range-thumb,
+input[class="range-slider"]:focus::-moz-range-thumb { /*------- For Firefox -------*/
 	background-color: #ffb300;
+}
+input[class="range-slider"]:hover::-ms-thumb,
+input[class="range-slider"]:focus::-ms-thumb { /*------- For EDGE and IE -------*/
+	background-color: #ffb300;
+}
+input[class="range-slider"]::-ms-tooltip { /*------- For EDGE and IE -------*/
+	display: none;
 }
 input[class="range-slider"]::-moz-range-progress { /*------- For Firefox Progress Display -------*/
 	background-color: #00919a;
@@ -564,7 +611,8 @@ input[class="range-slider"]::-moz-range-progress { /*------- For Firefox Progres
 	height: 10px;
 	width: 100%;
 }
-input[class="range-slider"]:hover::-moz-range-progress { /*------- For Firefox -------*/
+input[class="range-slider"]:hover::-moz-range-progress,
+input[class="range-slider"]:focus::-moz-range-progress { /*------- For Firefox -------*/
 	background-color: #ffb300;
 }
 
